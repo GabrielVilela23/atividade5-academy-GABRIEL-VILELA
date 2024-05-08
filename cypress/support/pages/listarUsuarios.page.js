@@ -22,4 +22,11 @@ export default class Listar {
         cy.get (this.paginaAnterior).click();
     }
 
+pesquisarUsuario(termo) {
+    cy.get(this.pesquisaUsuario).type(termo);
+  }
+
+  executarPesquisa() {
+    cy.get(this.botaoPesquisar).click(); 
+  }
 }
